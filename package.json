@@ -1,0 +1,21 @@
+{
+  "name": "awesome",
+  "version": "1.0.0",
+  "description": "Awesome! Guitar board",
+  "main": "awesome-guitar-board.js",
+  "scripts": {
+    "start": "lite-server",
+    "build": "tsc --watch"
+    "test": "karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "Apache2",
+  "devDependencies": {
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-typescript": "^3.0.4",
+    "typescript": "^2.4.1"
+  }
+}
