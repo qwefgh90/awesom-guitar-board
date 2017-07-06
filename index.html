@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="bundle.js"></script>
     <style>
       .outer-box {
       border-top: 2px solid #555555;
-      border-right: 2px solid #555555;
       border-bottom: 2px solid #555555;
       border-left: 2px solid #555555;
       padding-top: 1px;
-      padding-right: 1px;
       padding-bottom: 1px;
       padding-left: 1px;
       }
@@ -37,11 +36,21 @@
       }
       
       .note-box {
-      width: 100px;
+      width: 4.1%;
       display: inline-block;
       text-align: center;
       border-right: 1px solid #333333;
+      border-left: 1px solid #333333;
       }
+
+      .spadding-box {
+      width: 4.1%;
+      display: inline-block;
+      text-align: center;
+      border-right: 1px solid #ffffff;
+      border-left: 1px solid #ffffff;
+      }
+
       .note-box > span {
         font-size: 20px;
       }
@@ -50,99 +59,42 @@
   <body>
     <strong>Awesome Guitar board</strong>
     <div class="outer-box">  
-      <div class="padding-box">
-        <div>
+      <div class="padding-box" id="before">
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div>
-        </div>
         </div>
       </div>
-      <div class="inner-box">
+      <div class="inner-box" id="string1">
         <div class="line-box"><hr class="line"/></div>
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>F</span></div><!--
-          --><div class="note-box"><span>Fb</span></div><!--
-          --><div class="note-box"><span>G</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div>
         </div>
       </div>
-      <div class="inner-box">
-        <div class="line-box"><hr class="line"/></div>
-        <div class="circles"><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div><!--
-          --><div class="note-box"><span>&#9675;</span></div>
-        </div>
-      </div>
-      <div class="inner-box">
+      <div class="inner-box" id="string2">
         <div class="line-box"><hr class="line"/></div>
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div>
         </div>
       </div>
-      <div class="inner-box">
+      <div class="inner-box" id="string3">
         <div class="line-box"><hr class="line"/></div>
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div>
         </div>
       </div>
-      <div class="inner-box">
+      <div class="inner-box" id="string4">
         <div class="line-box"><hr class="line"/></div>
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div>
         </div>
       </div>
-      <div class="inner-box">
+      <div class="inner-box" id="string5">
         <div class="line-box"><hr class="line"/></div>
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div>
         </div>
       </div>
-      <div class="padding-box">
+      <div class="inner-box" id="string6">
+        <div class="line-box"><hr class="line"/></div>
         <div class="circles">
-          <!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div><!--
-          --><div class="note-box"><span>&nbsp;</span></div>
+        </div>
+      </div>
+      <div class="padding-box" id="after">
+        <div class="circles">
         </div>
       </div>
     </div>

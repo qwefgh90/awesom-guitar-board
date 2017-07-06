@@ -5,17 +5,23 @@
   "main": "awesome-guitar-board.js",
   "scripts": {
     "start": "lite-server",
-    "build": "tsc --watch"
+    "build": "tsc --watch",
+    "watch": "webpack --watch",
     "test": "karma start karma.conf.js"
   },
   "author": "",
   "license": "Apache2",
   "devDependencies": {
+    "@types/es6-shim": "^0.31.34",
+    "@types/jasmine": "^2.5.53",
     "jasmine-core": "^2.6.4",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.0",
     "karma-typescript": "^3.0.4",
-    "typescript": "^2.4.1"
-  }
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {}
 }

@@ -1,13 +1,11 @@
-import * as awesome from "../src/awesome-guitar-board";
-import PitchType = awesome.Music.PitchType;
-import Guitar = awesome.Music.Guitar;
-
-/*
- * unit test for awesome-guitar.board.ts
- */
-describe('awesome-guitar-board', function() {
-    it('should return frets mapping to every pitch in 1 string', function() {
-        let g = Guitar;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var awesome = require("../src/awesome-guitar-board");
+var PitchType = awesome.Music.PitchType;
+var Guitar = awesome.Music.Guitar;
+describe('awesome-guitar-board', function () {
+    it('should return frets mapping to every pitch in 1 string', function () {
+        var g = Guitar;
         expect(g.findFretByString(1)(PitchType.C)).toEqual([8, 20]);
         expect(g.findFretByString(1)(PitchType.Db)).toEqual([9, 21]);
         expect(g.findFretByString(1)(PitchType.D)).toEqual([10, 22]);
@@ -21,10 +19,8 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(1)(PitchType.Bb)).toEqual([6, 18]);
         expect(g.findFretByString(1)(PitchType.B)).toEqual([7, 19]);
     });
-
-
-    it('should return frets mapping to every pitch in 2 string', function() {
-        let g = Guitar;
+    it('should return frets mapping to every pitch in 2 string', function () {
+        var g = Guitar;
         expect(g.findFretByString(2)(PitchType.G)).toEqual([8, 20]);
         expect(g.findFretByString(2)(PitchType.Ab)).toEqual([9, 21]);
         expect(g.findFretByString(2)(PitchType.A)).toEqual([10, 22]);
@@ -38,11 +34,8 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(2)(PitchType.F)).toEqual([6, 18]);
         expect(g.findFretByString(2)(PitchType.Gb)).toEqual([7, 19]);
     });
-
-
-
-    it('should return frets mapping to every pitch in 3 string', function() {
-        let g = Guitar;
+    it('should return frets mapping to every pitch in 3 string', function () {
+        var g = Guitar;
         expect(g.findFretByString(3)(PitchType.Eb)).toEqual([8, 20]);
         expect(g.findFretByString(3)(PitchType.E)).toEqual([9, 21]);
         expect(g.findFretByString(3)(PitchType.F)).toEqual([10, 22]);
@@ -56,10 +49,8 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(3)(PitchType.Db)).toEqual([6, 18]);
         expect(g.findFretByString(3)(PitchType.D)).toEqual([7, 19]);
     });
-
-
-    it('should return frets mapping to every pitch in 4 string', function() {
-        let g = Guitar;
+    it('should return frets mapping to every pitch in 4 string', function () {
+        var g = Guitar;
         expect(g.findFretByString(4)(PitchType.Bb)).toEqual([8, 20]);
         expect(g.findFretByString(4)(PitchType.B)).toEqual([9, 21]);
         expect(g.findFretByString(4)(PitchType.C)).toEqual([10, 22]);
@@ -73,9 +64,8 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(4)(PitchType.Ab)).toEqual([6, 18]);
         expect(g.findFretByString(4)(PitchType.A)).toEqual([7, 19]);
     });
-
-    it('should return frets mapping to every pitch in 5 string', function() {
-        let g = Guitar;
+    it('should return frets mapping to every pitch in 5 string', function () {
+        var g = Guitar;
         expect(g.findFretByString(5)(PitchType.F)).toEqual([8, 20]);
         expect(g.findFretByString(5)(PitchType.Gb)).toEqual([9, 21]);
         expect(g.findFretByString(5)(PitchType.G)).toEqual([10, 22]);
@@ -89,10 +79,8 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(5)(PitchType.Eb)).toEqual([6, 18]);
         expect(g.findFretByString(5)(PitchType.E)).toEqual([7, 19]);
     });
-
-
-    it('should return frets mapping to every pitch in 6 string', function() {
-        let g = Guitar;
+    it('should return frets mapping to every pitch in 6 string', function () {
+        var g = Guitar;
         expect(g.findFretByString(6)(PitchType.C)).toEqual([8, 20]);
         expect(g.findFretByString(6)(PitchType.Db)).toEqual([9, 21]);
         expect(g.findFretByString(6)(PitchType.D)).toEqual([10, 22]);
@@ -107,3 +95,4 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(6)(PitchType.B)).toEqual([7, 19]);
     });
 });
+//# sourceMappingURL=awesome-guitar-board.test.js.map
