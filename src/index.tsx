@@ -1,6 +1,10 @@
 import { Music } from "./awesome-guitar-board";
 
-let board = new Music.GuitarBoardController();
+declare global {
+    interface Window {
+        board: Music.GuitarBoardController;
+    }
+}
 
 function ready(fn: () => void) {
     if (document.readyState != 'loading') {
@@ -11,5 +15,5 @@ function ready(fn: () => void) {
 }
 
 ready(function() {
-    board.initUI()
-})
+    window.board = new Music.GuitarBoardController();
+});

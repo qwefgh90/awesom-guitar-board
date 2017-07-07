@@ -6,7 +6,7 @@
   "scripts": {
     "start": "lite-server",
     "build": "tsc --watch",
-    "watch": "webpack --watch",
+    "webpack": "webpack --watch",
     "test": "karma start karma.conf.js"
   },
   "author": "",

@@ -1,6 +1,6 @@
-import * as awesome from "../src/awesome-guitar-board";
-import PitchType = awesome.Music.PitchType;
-import Guitar = awesome.Music.Guitar;
+import { Music } from "../src/awesome-guitar-board";
+import PitchType = Music.Pitch.PitchType;
+import Guitar = Music.Guitar;
 
 /*
  * unit test for awesome-guitar.board.ts
@@ -22,7 +22,6 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(1)(PitchType.B)).toEqual([7, 19]);
     });
 
-
     it('should return frets mapping to every pitch in 2 string', function() {
         let g = Guitar;
         expect(g.findFretByString(2)(PitchType.G)).toEqual([8, 20]);
@@ -38,8 +37,6 @@ describe('awesome-guitar-board', function() {
         expect(g.findFretByString(2)(PitchType.F)).toEqual([6, 18]);
         expect(g.findFretByString(2)(PitchType.Gb)).toEqual([7, 19]);
     });
-
-
 
     it('should return frets mapping to every pitch in 3 string', function() {
         let g = Guitar;

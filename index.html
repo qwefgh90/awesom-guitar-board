@@ -3,57 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <script src="bundle.js"></script>
+    <link rel="stylesheet" href="./styles.css">
     <style>
-      .outer-box {
-      border-top: 2px solid #555555;
-      border-bottom: 2px solid #555555;
-      border-left: 2px solid #555555;
-      padding-top: 1px;
-      padding-bottom: 1px;
-      padding-left: 1px;
-      }
-
-      .inner-box{
-      height: 50px;
-      line-height: 50px;
-      }
-      
-      .padding-box{
-      height: 20px;
-      line-height: 20px;
-      }
-
-      .line-box {
-      position: absolute;
-      width: 100%;
-      z-index: -1;
-      }
-
-      .line {
-      display: inline-block;
-      width: 100%;
-      vertical-align: middle;
-      }
-      
-      .note-box {
-      width: 4.1%;
-      display: inline-block;
-      text-align: center;
-      border-right: 1px solid #333333;
-      border-left: 1px solid #333333;
-      }
-
-      .spadding-box {
-      width: 4.1%;
-      display: inline-block;
-      text-align: center;
-      border-right: 1px solid #ffffff;
-      border-left: 1px solid #ffffff;
-      }
-
-      .note-box > span {
-        font-size: 20px;
-      }
     </style>
   </head>
   <body>
@@ -97,6 +48,29 @@
         <div class="circles">
         </div>
       </div>
+    </div>
+    <div>
+      <h4>Select a scale</h4>
+      <form onchange="board.select()" name="scaleForm">
+        <input type="radio" name="scale" value="0" checked>None</input>
+        <input type="radio" name="scale" value="1">Minor</input>
+        <input type="radio" name="scale" value="2">Major</input>
+      </form>
+      <h4>Select a first degree</h4>
+      <form onchange="board.select()" name="degreeForm">
+        <input type="radio" value="0" name="degree" checked>C</input>
+        <input type="radio" value="1" name="degree">Db</input>
+        <input type="radio" value="2" name="degree">D</input>
+        <input type="radio" value="3" name="degree">Eb</input>
+        <input type="radio" value="4" name="degree">E</input>
+        <input type="radio" value="5" name="degree">F</input>
+        <input type="radio" value="6" name="degree">Gb</input>
+        <input type="radio" value="7" name="degree">G</input>
+        <input type="radio" value="8" name="degree">Ab</input>
+        <input type="radio" value="9" name="degree">A</input>
+        <input type="radio" value="10" name="degree">Bb</input>
+        <input type="radio" value="11" name="degree">B</input>
+      </form>      
     </div>
   </body>
 </html>
